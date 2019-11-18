@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Your Stay - Family suite, Luxury Single Room, Standard Suite </title>
+    <link rel="stylesheet" href="css/paypal-booking.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <br><br>
+    <form action="https://formspree.io/pimpmylifestylegame@gmail.com" method="POST" class="booking-form">
+      <input type="hidden" name="_next" value="https://nabetuaful.com/"/>
+      <input type="text" name="_gotcha" style="display:none">
+
+      <!-- WARNING: STEP ONE: ROOM DETAILS -->
+        <div class="steps" id="step-1">
+          <div class="title">
+            <span> <i class="fa fa-bed"></i> <span class="name-of-title">Step 1: Room details</span> </span>
+          </div>
+
+            <label>
+              <b> <i>*</i>  First name:</b>
+              <br>
+              <span class="more-users-name-option options">Please give us the name of one of the people staying in this room</span>
+              <input type="text" name="firstname" class="name-first">
+            </label>
+
+            <label>
+              <b><i>*</i> Last name:</b>
+              <br>
+
+              <input type="text" name="lastname" class="name-last">
+            </label>
+
+            <label>
+              <b>Any Special Request:</b>
+              <br>
+
+              <textarea name="message" rows="5" cols="80" class="special-request-txt"></textarea>
+            </label>
+
+            <label>
+              <b> <i>*</i> Check-in date:</b>
+              <br>
+              <input type="date" name="Check-in-date" required>
+            </label>
+            <label>
+              <b> <i>*</i> Check-out date:</b>
+              <br>
+              <input type="date" name="Check-in-date" required>
+            </label>
+        </div>
+
+        <!-- WARNING: STEP 2 personal details -->
+        <div class="steps" id="step-2">
+          <div class="title">
+            <span> <i class="fa fa-user"></i> <span class="name-of-title">Step 2: Personal details</span> </span>
+          </div>
+          <label>
+            <b><i>*</i> Your email:</b>
+            <input type="email" name="_replyto" class="email">
+          </label>
+
+          <label>
+            <b><i>*</i> Mobile number:</b>
+            <br>
+            <span class="options">We'll only contact you in an emergency</span>
+            <input type="tel" name="Contact" class="mobilenumber">
+          </label>
+
+        </div>
+
+        <!-- WARNING: STEP 3 Payment method -->
+        <div class="steps" id="step-3">
+          <div class="title">
+            <span> <i class="fa fa-user"></i> <span class="name-of-title">Step 3: Payment method</span> </span>
+          </div>
+          <div class="paypal-logo">
+            <img src="images/paypal.png" alt="Book with paypal">
+            <span> <i class="fa fa-paypal"></i> <span class="name-of-title">Paypal</span> </span>
+          </div>
+        </div>
+
+        <!-- WARNING: STEP 4 Cancellation Policy -->
+        <div class="steps" id="step-3">
+          <div class="title">
+            <span> <i class="fa fa-cross"></i> <span class="name-of-title">Step 4: Cancellation Policy</span> </span>
+          </div>
+          <div class="cancellation-policy">
+            This rate is refundable and can be changed or cancelled.
+          </div>
+          <hr>
+
+          <div class="user-data">
+            <br>
+            <p class="no-blank"></p>
+            <div class="button-box">
+              <a class="confirmation-a" onclick="confirmInputs()"> Book <i class="fa fa-spinner fa-spin"></i> </a>
+              <button type="submit"  class="booking-submit">Confirm</button>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+        <input type="hidden" name="_next" value="https://mysite.com/thanks.html"/>
+
+    </form>
+
+
+
+  <script type="text/javascript" src="js/paypal-booking.js">
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Monte Carlo Saadiyat | Superior rooms, Deluxe, Executive</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/hotel-room.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <div class="nb-hotel-body">
+      <!-- WARNING: HEADER -->
+      <div class="nb-hotel-header" style="background-image: url(img/deluxe.jpg);">
+        <div class="nb-header-img-section">
+          <img src="" alt="">
+          <div class="hotel-header-name-box">
+            <span class="hotel-header-name-txt"></span>
+            <span class="hotel-header-slogan-txt"></span>
+
+          </div>
+        </div>
+        <div class="nb-menu-section">
+          <span class="bg bg-menu-box menu-box">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#" class="active-link">Rooms</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+
+            <span class="close-box fa fa-times" onclick="showMenu()"></span>
+          </span>
+          <span class="sm-screens sm-menu-box" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+          </span>
+        </div>
+
+      </div>
+      <!-- WARNING: //HEADER -->
+
+      <!-- WARNING: ROOMS CONTAINER -->
+      <div class="nb-rooms-ctnr">
+        <br><br><br>
+        <br>
+
+        <!-- IMG CONTAINER | SLIDER -->
+
+        <div class="nb-img-box" id="superior-room">
+          <p>SUPERIOR</p>
+          <img src="" alt="" class="automatic-img">
+          <span class="control-img-arrow arrow-left fa fa-arrow-left" onclick="imgSlideSuperior()"></span>
+          <span class="control-img-arrow arrow-right fa fa-arrow-right" onclick="imgSlideSuperior()"></span>
+          <div class="room-info-box">
+            <span class="room-info-title"></span>
+            <ul>
+              <li>Laptop-size safe</li>
+              <li>Laptop-size </li>
+              <li>Flat-screen TV</li>
+              <li>Working Desk</li>
+              <li>Lounge area</li>
+              <li>Climate Control</li>
+              <li>Complimentary access to Executive Lounge</li>
+            </ul>
+            <ul>
+              <li>Daily newspapers service</li>
+              <li>Free high-speed Internet</li>
+              <li>Free WI-FI</li>
+              <li>High-speed internet</li>
+              <li>In-room coffee and/or tea facilities</li>
+              <li>Safe</li>
+              <li>Complimentary soft drinks in the minibar</li>
+            </ul>
+            <ul>
+              <li>View: Pool, City</li>
+              <li>Decor: contemporary</li>
+              <li>Beds: King or Twin</li>
+              <li>Extra Bed: One extra bed allowed</li>
+            </ul>
+            <ul>
+              <li>Smoking Room Possible: Yes</li>
+              <li>Bathroom: Bathtub or shower</li>
+              <li>Maximum Occupancy: 3 Adilts</li>
+              <li>Size: 538 ft'</li>
+            </ul>
+            <a class="book-room-btn"></a>
+          </div>
+        </div>
+
+        <div class="nb-img-box" id="deluxe-room">
+          <p>DELUXE</p>
+          <img src="" alt="" class="automatic-img">
+          <span class="control-img-arrow arrow-left fa fa-arrow-left" onclick="imgSlideDeluxe()"></span>
+          <span class="control-img-arrow arrow-right fa fa-arrow-right" onclick="imgSlideDeluxe()"></span>
+          <div class="room-info-box">
+            <span class="room-info-title"></span>
+            <ul>
+              <li>Laptop-size safe</li>
+              <li>Laptop-size </li>
+              <li>Flat-screen TV</li>
+              <li>Working Desk</li>
+              <li>Lounge area</li>
+              <li>Climate Control</li>
+              <li>Complimentary access to Executive Lounge</li>
+            </ul>
+            <ul>
+              <li>Daily newspapers service</li>
+              <li>Free high-speed Internet</li>
+              <li>Free WI-FI</li>
+              <li>High-speed internet</li>
+              <li>In-room coffee and/or tea facilities</li>
+              <li>Safe</li>
+              <li>Complimentary soft drinks in the minibar</li>
+            </ul>
+            <ul>
+              <li>View: Pool, City</li>
+              <li>Decor: contemporary</li>
+              <li>Beds: King or Twin</li>
+              <li>Extra Bed: One extra bed allowed</li>
+            </ul>
+            <ul>
+              <li>Smoking Room Possible: Yes</li>
+              <li>Bathroom: Bathtub or shower</li>
+              <li>Maximum Occupancy: 3 Adilts</li>
+              <li>Size: 538 ft'</li>
+            </ul>
+            <a class="book-room-btn"></a>
+          </div>
+        </div>
+
+        <div class="nb-img-box" id="executive-room">
+          <p>EXECUTIVE</p>
+          <img src="" alt="" class="automatic-img">
+          <span class="control-img-arrow arrow-left fa fa-arrow-left" onclick="imgSlideExecutive()"></span>
+          <span class="control-img-arrow arrow-right fa fa-arrow-right" onclick="imgSlideExecutive()"></span>
+          <div class="room-info-box">
+            <span class="room-info-title"></span>
+            <ul>
+              <li>Laptop-size safe</li>
+              <li>Laptop-size </li>
+              <li>Flat-screen TV</li>
+              <li>Working Desk</li>
+              <li>Lounge area</li>
+              <li>Climate Control</li>
+              <li>Complimentary access to Executive Lounge</li>
+            </ul>
+            <ul>
+              <li>Daily newspapers service</li>
+              <li>Free high-speed Internet</li>
+              <li>Free WI-FI</li>
+              <li>High-speed internet</li>
+              <li>In-room coffee and/or tea facilities</li>
+              <li>Safe</li>
+              <li>Complimentary soft drinks in the minibar</li>
+            </ul>
+            <ul>
+              <li>View: Pool, City</li>
+              <li>Decor: contemporary</li>
+              <li>Beds: King or Twin</li>
+              <li>Extra Bed: One extra bed allowed</li>
+            </ul>
+            <ul>
+              <li>Smoking Room Possible: Yes</li>
+              <li>Bathroom: Bathtub or shower</li>
+              <li>Maximum Occupancy: 3 Adults</li>
+              <li>Size: 538 ft'</li>
+            </ul>
+            <a class="book-room-btn"></a>
+          </div>
+        </div>
+
+      </div>
+      <!-- WARNING: //ROOMS CONTAINER -->
+      <div class="nb-hotel-footer" style="background: url(img/bluepattern.JPG)">
+        <span class="footer-logo-box"><img src="img/logo-header.png" alt=""></span>
+				<a class="contact-page" style="background:rgba(255,255,255,0.7);
+				display: block; margin: auto; text-align: center;
+				text-decoration: none;">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- WARNING:  -->
+
+    <!-- WARNING: JAVASCRIPTS || CONTROLS -->
+    <script type="text/javascript" src="js/controls.js"></script>
+  </body>
+</html>

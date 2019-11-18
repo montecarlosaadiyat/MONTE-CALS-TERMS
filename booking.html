@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Monte Carlo Saadiyat | Bookings</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/form-payment.css">
+    <link rel="stylesheet" href="css/hotel-room.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- WARNING: HEADER -->
+    <div class="nb-hotel-header" style="background-image: url(img/deluxe.jpg);">
+      <div class="nb-header-img-section">
+        <img src="img/logo-header.png" alt="">
+        <div class="hotel-header-name-box">
+          <span class="hotel-header-name-txt">MONTE' CARLO</span>
+          <span class="hotel-header-slogan-txt">HOTE & RESORT</span>
+
+        </div>
+      </div>
+      <div class="nb-menu-section">
+        <span class="bg bg-menu-box menu-box">
+          <a class="home-page">Home</a>
+          <a class="about-page">About us</a>
+          <a  class="active-link room-page">Rooms</a>
+          <a class="news-page">News</a>
+          <a class="contact-page">Contact</a>
+
+          <span class="close-box fa fa-times" onclick="showMenu()"></span>
+        </span>
+        <span class="sm-screens sm-menu-box" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </span>
+      </div>
+
+    </div>
+    <!-- WARNING: //HEADER -->
+    <br><br>
+    <div class="form-payment">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted) {window.location='thankyou.htm';}"></iframe>
+      <form class="payment-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfy6Z6-yYshqY4EKjyjMLhKoOFFvkAccEF0PeBctfoZd_KU7A/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="post">
+        <div class="title" id="click-on-a-room">
+          Rooms currently available as at: <span class="current-date">Now</span>
+        </div>
+        <div class="room-details-section">
+
+          <div class="rooms-slider">
+            <div class="box" id="deluxe-room" onclick="deluxeRoom()">
+              <img src="img/deluxe.jpg" alt="deluxe">
+              <i class="fa fa-check correct"></i>
+              <i class="room-name">
+                Deluxe:
+                $290.00
+              </i>
+            </div>
+
+            <div class="box" id="executive-room" onclick="executiveRoom()">
+              <img src="img/executive.jpg" alt="executive">
+              <i class="fa fa-check correct"></i>
+              <i class="room-name">
+                Executive:
+                $400.00
+              </i>
+            </div>
+
+            <div class="box" id="deluxeSuite-room" onclick="deluxeSuiteRoom()">
+              <img src="img/deluxesuite.jpg" alt="deluxeSuite">
+              <i class="fa fa-check correct"></i>
+              <i class="room-name">
+                Deluxe Suite:
+                $350.00
+              </i>
+            </div>
+
+            <div class="box" id="executiveSuite-room" onclick="executiveSuiteRoom()">
+              <img src="img/executivesuite.jpg" alt="executiveSuite">
+              <i class="fa fa-check correct"></i>
+              <i class="room-name">
+                Executive Suite:
+                $450.00
+              </i>
+            </div>
+
+            <div class="box" id="presidentialSuite-room" onclick="presidentialSuiteRoom()">
+              <img src="img/presidentialsuite.jpg" alt="presidentialSuite">
+              <i class="fa fa-check correct"></i>
+              <i class="room-name">
+                Presidential Suite:
+                $400.00
+              </i>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="entry.1705518865"  id="how_many_adults_google">
+        <input type="hidden" name="entry.2133960596"  id="how_many_children_google">
+        <input type="hidden" name="entry.769332286"   id="amount_charged_google">
+        <br><br>
+        <div class="client-info-section">
+          <div class="box-2" id="first-box-2">
+            <span class="box-title">Room Information</span>
+
+            <div class="form-group nb-inline">
+              <label>How many adults?</label>
+              <select class="number_of_adults" name="number_of_adults">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group nb-inline">
+              <label>How many children?</label>
+              <select class="number_of_children" name="number_of_children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Any special request?</label>
+              <textarea name="entry.603655863" rows="5" cols="80" class="special_request"></textarea>
+            </div>
+          </div>
+
+          <div class="box-2" id="personal-info-box">
+            <span class="box-title">Personal Information</span>
+            <div class="form-group">
+              <label><i>*</i>Name of person you are booking for</label>
+              <input type="text" name="entry.1832793149" placeholder="Name" id="name_of_person">
+              <span class="error" id="error-name"></span>
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label><i>*</i>Email address</label>
+              <input type="text" name="entry.226932620" placeholder="Email" id="email_of_person">
+              <span class="error" id="error-email"></span>
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label><i></i>Contact number</label>
+              <input type="tel" name="entry.1255423652" id="contact_of_person">
+            </div>
+          </div>
+
+          <div class="box-2" id="payment-method">
+            <span class="box-title"></span>
+            <img src="img/paypal.png" alt="ppaypal">
+          </div>
+        </div>
+
+        <div class="amount-details-section" style="background: url(img/executive.jpg); background-repeat: no-repeat; background-size: cover;">
+          <span class="tint">
+            <div class="payment-box">
+              <span class="payment-title">
+                Pay this amount
+              </span>
+              <br><br>
+              <p class="amount-txt" id="amount-txt"> <i class="fa fa-dollar"></i> </p>
+              <a class="confirm-btn nb-btn" onclick="confirmInputs()">Confirm <i class="fa fa-spinner fa-spin"></i> </a>
+              <input type="submit" class="nb-btn submit-btn" value="Book">
+            </div>
+          </span>
+        </div>
+
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/form-payment.js">
+    </script>
+		<script type="text/javascript" src="js/controls.js">
+    </script>
+  </body>
+</html>
